@@ -1,0 +1,48 @@
+/* Ensure body and html take up the full height of the page */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Optional: Set a default font */
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Dynamic sizing variables for header and footer */
+:root {
+    --header-height: 60px; /* Adjust according to the header size */
+    --footer-height: 50px; /* Adjust according to the footer size */
+}
+
+/* Basic layout structure */
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    padding-top: var(--header-height);
+    padding-bottom: var(--footer-height);
+    margin: 0;
+}
+
+/* Center content dynamically if no additional height */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;  /* Stack items vertically */
+    justify-content: center; /* Center if content is minimal */
+    align-items: center;     /* Center horizontally */
+    margin: 0 auto;
+    max-width: 800px;        /* Limit content width for readability */
+    padding: 1rem;
+}
+
+/* Error-specific styles */
+.error-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ff0000; /* Optional: Highlight error title in red */
+}
+
+.error-container p {
+    font-size: 1.25rem;
+    margin: 0;
+    color: #333; /* Neutral color for error text */
+}
