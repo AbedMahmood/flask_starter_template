@@ -2,7 +2,7 @@
 Barebone flask starter project with hybrid static/dynamic routing
 
 ### Virtual Environment (venv)
-> Python -m venv venv
+> python -m venv venv
 
 > source venv/bin/activate
 
