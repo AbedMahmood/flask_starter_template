@@ -1,0 +1,62 @@
+/* Error Page Styles */
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.error-container h1 {
+    font-size: 3rem;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+.error-container p {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Content Container */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1rem;
+}
+
+/* Main Page Styling */
+.page-main .jumbotron {
+    background-color: #ffffff; /* White background for jumbotron */
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page-main .jumbotron .display-4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.page-main .jumbotron .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.page-main .jumbotron .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.page-main .jumbotron .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}

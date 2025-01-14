@@ -1,0 +1,52 @@
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment directories
+venv/
+ENV/
+env/
+.venv/
+.ENV/
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Flask-specific
+instance/
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Pytest
+.cache/
+
+# Coverage reports
+.coverage
+coverage.xml
+*.cover
+*.py,cover
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Bandit
+.bandit/
+
+# pipenv
+Pipfile.lock
+
+# pyenv
+.python-version
+
+# Cython debug symbols
+cython_debug/
