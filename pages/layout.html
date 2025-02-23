@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - {{ page_title }}</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Custom CSS -->
+    <link href="{{ url_for('serve_layout_css') }}" rel="stylesheet">
+
+    {% if css_file %}
+        <link rel="stylesheet" href="{{ css_file }}">
+    {% endif %}
+</head>
+<body>
+
+    {% block navbar %}
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <!-- Hamburger Menu -->
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <!-- Brand Name -->
+                <a class="navbar-brand" href="/home">Demo</a>
+
+                <!-- Navigation Links -->
+                <ul class="nav-menu">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/test">Test</a></li>
+                    <li><a href="/error">Error</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    {% endblock %}
+
+    <main class="content-container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.nav-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
